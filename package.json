@@ -5,9 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "start": "node server.js",
     "lint": "vue-cli-service lint",
-    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
+    "start": "node server.js"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
