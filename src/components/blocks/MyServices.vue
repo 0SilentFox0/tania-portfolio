@@ -64,18 +64,8 @@
 
 
 <script>
-import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-import 'swiper/swiper-bundle.css'
-
 export default {
   name: 'MyServices',
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  directives: {
-    swiper: directive,
-  },
   data() {
     return {
       swiperOption: {

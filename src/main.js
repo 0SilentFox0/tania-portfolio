@@ -16,6 +16,16 @@ Vue.use(VueSmoothScroll, {
   offset: -50,
 })
 
+import 'swiper/swiper-bundle.css'
+import { Autoplay, Mousewheel, Pagination, Navigation, Swiper as SwiperClass } from 'swiper'
+
+import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
+
+SwiperClass.use([Pagination, Mousewheel, Autoplay, Navigation])
+Vue.use(getAwesomeSwiper(SwiperClass))
+const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass)
+
+
 
 
 Vue.config.productionTip = false
