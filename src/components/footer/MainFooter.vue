@@ -45,11 +45,11 @@ export default {
             socialLinks: [
                 {
                     text: 'Telegram',
-                    link: '',
+                    link: 'https://t.me/ursakii_tania',
                 },
                 {
                     text: 'Instagram',
-                    link: '',
+                    link: 'https://www.instagram.com/ursakii_tania/',
                 },
                 {
                     text: 'Email',
