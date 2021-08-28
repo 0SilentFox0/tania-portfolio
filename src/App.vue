@@ -3,7 +3,7 @@
       id="app"
      class="font-main"
   >
-<!--    <template v-if="winnerWidth >= 1024">-->
+    <template v-if="winnerWidth >= 1024">
       <MainHeader/>
       <MyNameBlock/>
       <RepresentationBlock/>
@@ -13,8 +13,8 @@
       <ProjectsBlock/>
       <FeedBackBlock/>
       <MainFooter/>
-<!--    </template>-->
-<!--    <MobilePlug v-else/>-->
+    </template>
+    <MobilePlug v-else/>
   </div>
 </template>
 
@@ -33,7 +33,7 @@ import RepresentationBlock from "@/components/blocks/RepresentationBlock.vue";
 export default {
   name: 'App',
   components: {
-    // MobilePlug,
+    MobilePlug,
     MyServices,
     FeedBackBlock,
     MainFooter,
