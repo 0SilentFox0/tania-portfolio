@@ -52,7 +52,7 @@ export default {
           insta: '@cherryroasters',
         },
         {
-          name: 'Светлана Рудченко|Акушер',
+          name: 'Светлана Рудченко| Акушер',
           description: ['ведення акаунту Instagram'],
           link: 'https://www.instagram.com/cherryroasters/',
           insta: '@svet.malinka_',
@@ -68,6 +68,30 @@ export default {
           description: ['ведення акаунту Instagram'],
           link: 'https://www.instagram.com/gastronom_winebar/',
           insta: '@gastronom_winebar',
+        },
+        {
+          name: 'Healthy Pet & Pet-Friendly Cafe',
+          description: ['ведення акаунту Instagram', 'створення індивідуальної контент стратегії.'],
+          link: 'https://www.instagram.com/healthy__pet/',
+          insta: '@healthy__pet',
+        },
+        {
+          name: 'Светлана Котенко',
+          description: ['ведення акаунту Instagram'],
+          link: 'https://www.instagram.com/lana_kotenko_/',
+          insta: '@lana_kotenko_',
+        },
+        {
+          name: 'BARON | TikTok DOM',
+          description: ['ведення акаунту TikTok та Instagram'],
+          link: 'https://vm.tiktok.com/ZMRNq2JeP/',
+          insta: '@baron.tiktok.dom',
+        },
+        {
+          name: 'TOK',
+          description: ['ведення акаунту TikTok'],
+          link: 'https://vm.tiktok.com/ZMRNqknAN/',
+          insta: '@tokcompany',
         },
       ],
     }
