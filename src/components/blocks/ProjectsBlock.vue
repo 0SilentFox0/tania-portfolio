@@ -52,7 +52,7 @@ export default {
           insta: '@cherryroasters',
         },
         {
-          name: 'Светлана Рудченко| Акушер',
+          name: 'Светлана Рудченко Акушер',
           description: ['ведення акаунту Instagram'],
           link: 'https://www.instagram.com/cherryroasters/',
           insta: '@svet.malinka_',
@@ -88,10 +88,34 @@ export default {
           insta: '@baron.tiktok.dom',
         },
         {
-          name: 'TOK',
-          description: ['ведення акаунту TikTok'],
-          link: 'https://vm.tiktok.com/ZMRNqknAN/',
-          insta: '@tokcompany',
+          name: 'Panorama Parus',
+          description: ['копірайтинг', 'розкладка(без дизайну)'],
+          link: 'https://www.instagram.com/panorama.parus',
+          insta: '@panorama.parus',
+        },
+        {
+          name: 'PRIDE CARS',
+          description: ['копірайтинг', 'розкладка(без дизайну)'],
+          link: 'https://www.instagram.com/pridecars.ua',
+          insta: '@pridecars.ua',
+        },
+        {
+          name: 'Hata Chernivtsi',
+          description: ['копірайтинг', 'розкладка(без дизайну)'],
+          link: 'https://www.instagram.com/hata.chernivtsi/',
+          insta: '@hata.chernivtsi',
+        },
+        {
+          name: 'Massage Olena',
+          description: ['Сторінка з нуля, менеджмент', 'повне ведення'],
+          link: 'https://www.instagram.com/massage_olena_cv/',
+          insta: '@massage_olena_cv',
+        },
+        {
+          name: 'German Studio',
+          description: ['Сторінка з 0', 'менеджмент', 'повне ведення'],
+          link: 'https://www.instagram.com/german_studio_/',
+          insta: '@german_studio_',
         },
       ],
     }
@@ -105,5 +129,10 @@ export default {
 .projects {
   padding: 100px 0;
   background: $secondary;
+}
+
+.content-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 </style>

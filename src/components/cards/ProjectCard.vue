@@ -1,22 +1,19 @@
 <template>
-  <div
-    :class="{'fullCard': showFull}"
-    class="project-card w-100">
+  <a 
+      :href="project.link" 
+      target="_blank" 
+      class="project-card w-full h-100">
     <div
-      @click="showFull = !showFull"
-      class="project-card__main-content d-flex justify-content-between align-items-center px-3 py-4">
+      class="project-card__main-content d-flex justify-content-between align-items-center px-4 py-4">
       <div class="d-flex flex-column">
         <div class="project-info d-flex justify-content-start align-items-baseline">
           <span class="text-lg name">
             {{ project.name }}
           </span>
-          <a
-            :href="project.link"
-            target="_blank"
-            class="text-base">
-            {{ project.insta }}
-          </a>
         </div>
+        <span class="text-base mt-3">
+            {{ project.insta }}
+        </span>
         <span
           v-for="item in project.description"
           :key="item"
@@ -24,32 +21,8 @@
             {{ item }}
         </span>
       </div>
-      <div class="d-flex justify-content-end align-items-center">
-        <img
-          svg-inline
-          class="icon"
-          src="@/assets/src/icons/arrow.svg"
-          alt="arrow">
-      </div>
     </div>
-<!--    <div class="project-best-examples">-->
-<!--      <div class="image-wrapper">-->
-<!--        <img-->
-<!--          src="@/assets/src/img/tanya.jpeg"-->
-<!--          alt="Example">-->
-<!--      </div>-->
-<!--      <div class="image-wrapper">-->
-<!--        <img-->
-<!--          src="@/assets/src/img/tanya.jpeg"-->
-<!--          alt="Example">-->
-<!--      </div>-->
-<!--      <div class="image-wrapper">-->
-<!--        <img-->
-<!--          src="@/assets/src/img/tanya.jpeg"-->
-<!--          alt="Example">-->
-<!--      </div>-->
-<!--    </div>-->
-  </div>
+  </a>
 </template>
 
 <script>
@@ -78,68 +51,31 @@ export default {
   position: relative;
   height: 170px;
 
-  &.fullCard {
-    //height: 800px;
-    transition: .3s;
+  border-bottom: 1px solid $links-color;
 
-    .project-card__main-content {
-      cursor: pointer;
-      border-bottom-color: $links-color;
-    }
-
-    .project-best-examples {
-      //transition: .3s;
-      //opacity: 1;
-      //display: flex;
-    }
-
-    .icon {
-      transform: rotate(90deg);
-
-      path {
-        stroke: $links-color;
-      }
-    }
+  &:nth-last-child(3n) {
+    border-right: 1px solid $links-color;
   }
 
+   &:nth-last-child(3n+1) {
+    border-left: 1px solid $links-color;
+  }
+
+   &:nth-last-child(-n+3) {
+    border-bottom: none;
+  }
+
+   &:hover {
+      background-color: $accent;
+    }
+
   .project-card__main-content {
-    border-bottom: 2px solid $accent;
     transition: .3s;
-    cursor: pointer;
 
     .project-info, .description {
       color: $text-color;
-
-      .name {
-        margin-right: 20px;
-      }
     }
   }
 
-  .project-best-examples {
-    position: absolute;
-    top: 25%;
-    left: 0;
-    justify-content: space-between;
-    align-content: center;
-    display: none;
-    opacity: 0;
-
-    .image-wrapper {
-      width: calc(100% / 3 - 20px);
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-
-  .icon {
-    margin-left: 20px;
-    transform: rotate(-45deg);
-    transition: .3s;
-  }
 }
 </style>
